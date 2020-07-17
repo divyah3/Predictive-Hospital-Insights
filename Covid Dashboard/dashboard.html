@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DASHBOARD</title>
+</head>
+<body>
+
+<h1><center>COVID-19 Predictive Hospital Insights</center></h1>
+
+<!-- States scroll bar for scalability -->
+<center>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    div.scrollmenu {
+      background-color: black;
+      overflow: auto;
+      white-space: nowrap;
+    }
+    
+    div.scrollmenu a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px;
+      text-decoration: none;
+    }
+    
+    div.scrollmenu a:hover {
+      background-color: black;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <div class="scrollmenu">
+      <a href="#home">AL</a>
+      <a href="#news">AK</a>
+      <a href="#contact">AZ</a>
+      <a href="#about">AR</a>
+      <a href="#support">CA</a>
+      <a href="#blog">CO</a>
+      <a href="#tools">CT</a>  
+      <a href="#base">DE</a>
+      <a href="#custom">DC</a>
+      <a href="#more">FL</a>
+      <a href="#logo">GA</a>
+      <a href="#friends">HI</a>
+      <a href="#partners">ID</a>
+      <a href="#people">IL</a>
+      <a href="#work">IN</a>
+      <a href="#home">IA</a>
+      <a href="#news">KS</a>
+      <a href="#contact">KY</a>
+      <a href="#about">LA</a>
+      <a href="#support">ME</a>
+      <a href="#blog">MD</a>
+      <a href="#tools">MA</a>  
+      <a href="#base">MI</a>
+      <a href="#custom">MN</a>
+      <a href="#more">MS</a>
+      <a href="#logo">MO</a>
+      <a href="#friends">MT</a>
+      <a href="#partners">NE</a>
+      <a href="#people">NV</a>
+      <a href="#work">NH</a>
+      <a href="#home">NJ</a>
+      <a href="#news">NM</a>
+      <a href="#contact">NY</a>
+      <a href="#about">NC</a>
+      <a href="#support">ND</a>
+      <a href="#blog">NO</a>
+      <a href="#tools">OK</a>  
+      <a href="#base">OR</a>
+      <a href="#custom">PA</a>
+      <a href="#more">RI</a>
+      <a href="#logo">SC</a>
+      <a href="#friends">SD</a>
+      <a href="#partners">TN</a>
+      <a href="#people">TX</a>
+      <a href="#work">UT</a>
+      <a href="#about">VT</a>
+      <a href="#support">VA</a>
+      <a href="#blog">WA</a>
+      <a href="#tools">WV</a>  
+      <a href="#base">WI</a>
+      <a href="#custom">WY</a>
+    </div>
+
+
+<!-- Buttons for navigation-->
+<span style="display:block; height: 20px;"></span>
+<div class="tab">
+  <button class="tablinks" onclick="openDash('Insight')">Relational Insight</button>
+  <button class="tablinks" onclick="openDash('Data')">Relational Data</button>
+</div>
+</center>
+
+<div id="Insight" class="tabcontent">
+</td> <td width="50%">
+    <iframe src="http://169.61.200.72:9300/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FCovid-19%2BHospital%2BDashboard%2BFinal&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000017355b8f3a6_00000000&CAM_action=logonAs&format=HTML&Download=false&p_Glass.urlLogonParameters=CAMNamespace,CAMUsername,CAMPassword&CAMNamespace=DocSocial&CAMUsername=aaminin@ibm.com&CAMPassword=IBM23ibm" width="1650" height="1000" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+</div>
+
+<div id="Data" class="tabcontent">
+    <iframe src="http://169.61.200.72:9300/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FWatson%2527s%2BDashboard%2521&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000017355c61a6b_00000000&CAM_action=logonAs&format=HTML&Download=false&p_Glass.urlLogonParameters=CAMNamespace,CAMUsername,CAMPassword&CAMNamespace=DocSocial&CAMUsername=aaminin@ibm.com&CAMPassword=IBM23ibm" width="1650" height="1000" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe></div>
+
+
+<!-- code help from https://www.w3schools.com/howto/howto_js_tabs.asp -->
+<script>
+function openDash(dash) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(dash).style.display = "block";
+}
+</script>
+
+<p><center>SAN FRANCISCO SUMMIT SQUAD TEAM: Ariella Garcia, Artem Minin, Bella Ngo, Divya Hauzaree, Eman Mustafa</center></p>
+<p><center>CONTRIBUTORS: Aleesha Nageer, Caroline Abel, Mahip Deora</center></p>
+<p><center>July 2020</center></p>
+
+</body>
+</html> 
